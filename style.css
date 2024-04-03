@@ -146,21 +146,34 @@ nav ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
 .HeroLeft {
     width: 100%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
-.HeroLeft h1,
 .HeroLeft p {
     max-width: 100%;
     text-align: justify;
+}
+.HeroLeft h1{
+    font-size: 60px;
+    letter-spacing: 3px;
+    width: 100%;
+    padding-top: 0.5em;
+}
+.HeroLeft p{
+  padding: 0.5em 0;
 }
 .HeroRight{
     display: none;
 }
 .nextPage {
-padding: 10px;
+padding: 1em 20px;
 display: flex;
 flex-direction: column;
 }
@@ -170,15 +183,16 @@ flex-direction: column;
 }
 .nxt1 img,
 .nxt2 img {
-    max-width: 100%; /* Ensure images adjust to the container width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto;
 }
 
 .nxt3 {
     text-align: center;
     padding: 10px;
-    margin-top: 56em;
+    margin-top: 45em;
     position: relative;
+    width: 80%;
 }
 .nxt3 h1{
     letter-spacing:2px;
@@ -193,3 +207,79 @@ flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 }
+@media only screen and (max-width: 414px) {
+    nav ul{
+        display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .HeroSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .HeroLeft {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .HeroLeft p {
+        max-width: 100%;
+        text-align: justify;
+    }
+    .HeroLeft h1{
+        font-size: 60px;
+        letter-spacing: 3px;
+        width: 100%;
+        padding-top: 0.5em;
+    }
+    .HeroLeft p{
+      padding: 0.5em 0;
+    }
+    .HeroRight{
+        display: none;
+    }
+    .nextPage {
+    padding: 1em 20px;
+    display: flex;
+    flex-direction: column;
+    }
+    .nxt{
+        display: flex;
+        flex-direction: column;
+    }
+    .nxt1 img,
+    .nxt2 img {
+        max-width: 100%; 
+        height: auto;
+    }
+    
+    .nxt3 {
+        text-align: center;
+        padding: 10px;
+        margin-top: 45em;
+        position: relative;
+        width: 80%;
+    }
+    .nxt3 h1{
+        letter-spacing:2px;
+        padding: 0.5em 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+    }
+    .nxt3 a{
+        text-decoration: none;
+        color: black;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    }
