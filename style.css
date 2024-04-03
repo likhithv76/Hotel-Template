@@ -135,7 +135,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
 /* Media Query */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
 .HeroSection {
     display: flex;
     flex-direction: column;
@@ -201,7 +201,7 @@ flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 430px) {
     nav{
         justify-content: right;
     }
@@ -276,4 +276,21 @@ flex-direction: column;
         align-items: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+    }
+    @media only screen and (min-width: 431px) and (max-width: 800px) and (min-width: 768px) {
+        nav{
+            justify-content: right;
+        }
+        nav ul li{
+            display:none;
+        }
+        .navImg{
+            width: 1.5em;
+            padding:0.5em 1em;
+        }
+        .nxt3 {
+            text-align: center;
+            width: 80%;
+            margin-top: 1em;
+        }
     }
