@@ -1,0 +1,96 @@
+nav ul {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+nav ul li {
+    padding: 0 15px;
+}
+.HeroSection {
+    display: flex;
+    flex-direction: row;
+}
+.HeroLeft {
+    width: 60%;
+    padding: 20px;
+}
+.HeroLeft h1,
+.HeroLeft p {
+    max-width: 100%;
+}
+.nextPage .nxt1 img,
+.nextPage .nxt1 img {
+    max-width: 100%;
+    height: auto;
+}
+.nextPage .nxt1 .img1 {
+    margin-bottom: 15px;
+}
+}
+
+/* Styles for phones */
+@media only screen and (max-width: 600px) {
+nav ul {
+    display: flex; /* Ensure the navigation is visible */
+    flex-direction: column;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+nav ul li {
+    text-align: center;
+    padding: 10px 0;
+}
+.HeroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.HeroLeft {
+    width: 100%;
+    padding: 10px; /* Decrease padding on smaller screens */
+}
+.HeroLeft h1,
+.HeroLeft p {
+    max-width: 100%;
+    margin-bottom: 10px; /* Add margin-bottom to create space between text and images */
+}
+.nextPage {
+    padding: 20px; /* Add padding to the container */
+}
+
+.nxt1,
+.nxt2 {
+    width: 100%; /* Make the image containers full width */
+    margin-bottom: 20px; /* Add margin between image containers */
+}
+
+.nxt1 img,
+.nxt2 img {
+    max-width: 100%; /* Ensure images adjust to the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nxt3 {
+    text-align: center; /* Center-align text */
+    padding: 0 10px; /* Add padding to the text container */
+}
+
+.click {
+    margin-top: 20px; /* Add margin at the top of the button */
+}
+
+.menu-toggle {
+    display: block; /* Display menu toggle button */
+    text-align: center;
+    margin-bottom: 15px;
+}
+.menu-toggle img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+nav ul.show {
+    display: flex;
+}
+}

@@ -42,7 +42,7 @@ nav ul li img{
     align-items: center;
     position: relative;
     padding: 10em 0;
-    text-align: left;
+    text-align: justify;
 }
 
 .HeroLeft h1{
@@ -131,21 +131,65 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
 /* Media Query */
-@media screen and (max-width: 768px) {
-    nav ul{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center; 
-        align-items: center;
-     }
-   /* nav ul li a{
+@media only screen and (max-width: 400px) {
+nav ul{
+    display: flex;
+flex-direction: column;
+padding: 0;
+margin: 0;
+}
+nav ul li {
+    text-align: center;
+    padding: 10px 0;
+}
+.HeroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.HeroLeft {
+    width: 100%;
+    padding: 10px;
+}
+.HeroLeft h1,
+.HeroLeft p {
+    max-width: 100%;
+    text-align: justify;
+}
+.HeroRight{
     display: none;
-   } */
-   /* nav ul li img{
-    display: block;
-   } */
+}
+.nextPage {
+padding: 10px;
+display: flex;
+flex-direction: column;
+}
+.nxt{
+    display: flex;
+    flex-direction: column;
+}
+.nxt1 img,
+.nxt2 img {
+    max-width: 100%; /* Ensure images adjust to the container width */
+    height: auto; /* Maintain aspect ratio */
 }
 
-@media screen and (max-width: 576px) {
-   
+.nxt3 {
+    text-align: center;
+    padding: 10px;
+    margin-top: 56em;
+    position: relative;
+}
+.nxt3 h1{
+    letter-spacing:2px;
+    padding: 0.5em 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+.nxt3 a{
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 }
