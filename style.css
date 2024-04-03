@@ -67,7 +67,8 @@ nav ul li a{
     background-color: #fe7170;
     color: white;
 text-decoration: none;
-text-align: left;
+align-self: flex-start;
+margin-left: 4em;
 }
 .HeroRight{
     width: 50%;
